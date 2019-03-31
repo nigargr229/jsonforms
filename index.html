@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+ </head>
+<body>
+    <main>
+        <section id="wrapper" class="d-flex flex-column align-items-center justify-content-center" style="height: 500px;">
+            <div id="myForm">               
+            </div>
+            <div class="form-container">
+                <form action="#" name="objectForm" onsubmit="return checkInput()">
+                   <div id="nameInput" class="mt-2">
+                    <input type="text" name="userName" class="form-control" placeholder="Enter username">
+                   </div>
+
+                   <div id="userSurnameInput" class="mt-2">
+                    <input type="text" name="userSurname" class="form-control" placeholder="Enter username">
+                   </div>
+
+                   <div id="dateInput"  class="mt-2">
+                    <input type="text" name="userBirthday" class="form-control" placeholder="Enter birthday">
+                   </div>
+
+                   <div id="emailInput"  class="mt-2">
+                    <input type="text" name="userEmail" class="form-control" placeholder="Enter useremail">
+                   </div>
+
+                   <div id="submitButton" class="mt-2">
+                       <button type="submit" class="btn btn-primary">Submit</button>
+                   </div>
+                </form>
+
+                <div id="deleteFromList" class="mt-3">
+                    <input type="text" placeholder="Enter ID" class="form-control" id="deleteId">
+                    <button type="button" onclick="deleteId()" class="btn btn-warning">DELETE</button>
+                </div>
+
+                <div id="listContainer" class="mt-3">
+                    <div id="sortButtonGroup">
+                        <button type="button" onclick="sortForId()" class="btn btn-outline-primary">ID</button>
+                        <button type="button" onclick="sortForName()" class="btn btn-outline-primary">Name</button>
+                        <button type="button" onclick="sortForSurname()" class="btn btn-outline-primary">Surname</button>
+                    </div>
+
+                    <div id="personList">
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="script.js"></script>    
+</body>
+</html>
